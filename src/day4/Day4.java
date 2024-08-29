@@ -11,8 +11,8 @@ public class Day4 {
 //        task2.realisation();
 //        Task3 task3 = new Task3();
 //        task3.realisation();
-        Task4 task4 = new Task4();
-        task4.realisation();
+//        Task4 task4 = new Task4();
+//        task4.realisation();
     }
 }
 
@@ -99,12 +99,10 @@ class Task2 {
     }
 
     public void print_info() {
-        System.out.println(max);
-        Arrays.sort(arr);
-        System.out.println();
-        System.out.println(min);
-        System.out.println(countZeroEnd);
-        System.out.println(sumZeroEnd);
+        System.out.println("Max: " + max);
+        System.out.println("Min: " + min);
+        System.out.println("EndZero: " + countZeroEnd);
+        System.out.println("SumZero: " + sumZeroEnd);
     }
 }
 
@@ -129,7 +127,7 @@ class Task3 {
                 indexMax = i;
             }
         }
-        System.out.println(indexMax);
+        System.out.println("Start Max Index: " + indexMax);
     }
 }
 
@@ -148,7 +146,7 @@ class Task4 {
                 index = i - 1;
             }
         }
-        System.out.println(sum);
-        System.out.println(index);
+        System.out.println("Sum: " + sum);
+        System.out.println("Index: "+ index);
     }
 }

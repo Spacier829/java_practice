@@ -1,4 +1,4 @@
-package Day3;
+package day3;
 
 import java.util.Scanner;
 
@@ -8,8 +8,8 @@ public class Day3 {
 //        task1.realisation();
 //        Task2 task2 = new Task2();
 //        task2.realisation();
-        Task3 task3 = new Task3();
-        task3.realisation();
+//        Task3 task3 = new Task3();
+//        task3.realisation();
     }
 }
 
