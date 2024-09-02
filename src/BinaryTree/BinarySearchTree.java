@@ -12,6 +12,9 @@ public class BinarySearchTree {
   }
 
   public void insertNode(int value, Node node) {
+    if (root == null) {
+      root = new Node(value);
+    }
     if (value < node.getValue()) {
       if (node.getLeft() == null) {
         node.setLeft(new Node(value));
