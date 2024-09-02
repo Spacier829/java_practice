@@ -2,8 +2,8 @@ package BinaryTree;
 
 public class Node {
   private int value;
-  private Node leftNode;
-  private Node rightNode;
+  private Node left;
+  private Node right;
 
   public Node(int value) {
     this.value = value;
@@ -17,29 +17,19 @@ public class Node {
     this.value = value;
   }
 
-  public void addNode(int value, Node root) {
-    if (value < root.getValue()) {
-      if (root.leftNode == null) {
-        leftNode = new Node(value);
-      } else {
-        leftNode.addNode(value, leftNode);
-      }
-    } else {
-      if (root.rightNode == null) {
-        rightNode = new Node(value);
-      } else {
-        rightNode.addNode(value, rightNode);
-      }
-    }
+  public Node getLeft() {
+    return left;
   }
 
-  public void printTree(Node root) {
-    if (root.leftNode != null) {
-      leftNode.printTree(leftNode);
-    }
-    System.out.println(root.getValue() + " ");
-    if (root.rightNode != null) {
-      rightNode.printTree(rightNode);
-    }
+  public void setLeft(Node left) {
+    this.left = left;
+  }
+
+  public void setRight(Node right) {
+    this.right = right;
+  }
+
+  public Node getRight() {
+    return right;
   }
 }
