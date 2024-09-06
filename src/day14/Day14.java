@@ -18,7 +18,6 @@ public class Day14 {
 }
 
 class Task1 {
-
   public static void printSumDigits(File file) {
     int sum = 0;
     int countNumbers = 0;
@@ -31,9 +30,7 @@ class Task1 {
         } else {
           scanner.next();
         }
-
       }
-      scanner.close();
       if (countNumbers != 10) {
         throw new MyException();
       }
@@ -42,7 +39,6 @@ class Task1 {
       System.out.println("Файл не найден");
     } catch (MyException e) {
       System.out.println("Некорректный входной файл");
-      ;
     }
   }
 }
