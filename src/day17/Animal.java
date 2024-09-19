@@ -1,18 +1,22 @@
 package day17;
 
 public enum Animal {
-  DOG("Bobik"),
-  CAT("Yea"),
-  FROG("QWA");
+  DOG("собака"),
+  CAT("кошка"),
+  FROG("лягушка");
 
-  private String name;
+  private final String translation;
 
-  Animal(String name) {
-    this.name = name;
+  Animal(String translation) {
+    this.translation = translation;
+  }
+
+  public String getTranslation() {
+    return translation;
   }
 
   @Override
   public String toString() {
-    return "кличка - " + name ;
+    return "Оригинал:" + super.toString() + "\nПеревод на русский:" + translation;
   }
 }
